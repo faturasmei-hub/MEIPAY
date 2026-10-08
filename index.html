@@ -1,92 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>MEIPAY - Comunicado MEI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin:0; padding:0;
-      font-family: Arial, sans-serif;
-      background-color:#f4f7fb; color:#333;
-    }
-    .container {
-      max-width:860px; margin:30px auto;
-      background:#fff; border:1px solid #E0E0E0;
-      padding:30px;
-    }
-    h1 { color:#2C3E50; font-size:26px; text-align:center; }
-    h3 { color:#3498db; font-size:18px; margin-top:20px; }
-    table { width:100%; border-collapse:collapse; margin:20px 0; }
-    th { background:#3498db; color:#fff; padding:12px; text-align:left; }
-    td { background:#f9f9f9; padding:12px; }
-    .btn {
-      display:inline-block; background:#2C7BE5; color:#fff;
-      text-decoration:none; padding:12px 24px;
-      border-radius:6px; font-weight:600; font-size:15px;
-    }
-    .footer {
-      font-size:14px; text-align:center; color:#888; margin-top:40px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsivo -->
+<title>Pagamento via PIX - MEIPAY</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZRCC2DGRE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CZRCC2DGRE');
+</script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 18px; /* letras maiores */
+    line-height: 1.6;
+  }
+  header {
+    background-color: #ffffff; /* fundo branco */
+    color: #002776;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+  header img {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #002776;
+  }
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+  }
+  h2 {
+    color: #002776;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  .qrcode img {
+    width: 260px;
+    margin: 20px 0;
+    border: 4px solid #eee;
+    border-radius: 10px;
+  }
+  .pix-key {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 18px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #2c3e50;
+    border-radius: 8px;
+    word-break: break-word;
+    margin-top: 20px;
+  }
+  .boleto-msg {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #444;
+    background: #eaf4ff;
+    border: 1px solid #bcd;
+    padding: 14px;
+    border-radius: 8px;
+  }
+  footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: #777;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>Comunicado MEI - Outubro 2026</h1>
-
-    <p>Prezado(a) empreendedor(a),</p>
-    <p>O documento referente à atualização do seu cadastro como Microempreendedor Individual (MEI) para Outubro de 2026 já está disponível para consulta.</p>
-    <p>A regularização garante a manutenção dos seus direitos e benefícios previstos em lei.</p>
-
-    <h3>Dados de vencimento</h3>
-    <table>
-      <tr>
-        <th>Referência</th>
-        <th>Período</th>
-        <th>Data de Vencimento</th>
-      </tr>
-      <tr>
-        <td>52713-0</td>
-        <td>10/2026</td>
-        <td><strong>08/10/2026</strong></td>
-      </tr>
-    </table>
-
-    <h3>Valores</h3>
-    <table>
-      <tr>
-        <th>Valor Principal</th>
-        <th>Descontos</th>
-        <th>Total</th>
-      </tr>
-      <tr>
-        <td>R$ 98,73</td>
-        <td>R$ 0,00</td>
-        <td><strong>R$ 98,73</strong></td>
-      </tr>
-    </table>
-
-    <div style="text-align:center; margin:30px 0;">
-      <a href="https://faturasmei-hub.github.io/pix-pagamento/" class="btn">
-        Consultar Documento
-      </a>
+  <header>
+    <img src="https://res.cloudinary.com/dxvyhlhvp/image/upload/v1791359870/LOGO_MEIPAY_w9mwsm.png" alt="Logo MEIPAY">
+    <h1>MEIPAY PAGAMENTOS</h1>
+  </header>
+  <main>
+    <h2>Pagamento via QR Code</h2>
+    <p>Escaneie o QR Code abaixo para realizar o pagamento com segurança.</p>
+    <div class="qrcode">
+      <img src="https://res.cloudinary.com/dxvyhlhvp/image/upload/v1791343962/qrcode-pix_1_jsagfj.png" alt="QR Code PIX">
     </div>
-
-    <h3>Benefícios da regularização</h3>
-    <ul>
-      <li>Contribuição simplificada que inclui INSS, ICMS e ISS.</li>
-      <li>Direito a benefícios previdenciários como aposentadoria e auxílio-doença.</li>
-      <li>Facilidade para emissão de notas fiscais.</li>
-      <li>Acesso a crédito e financiamentos.</li>
-      <li>Reconhecimento formal e segurança jurídica.</li>
-    </ul>
-
-    <div class="footer">
-      <p>Este comunicado é automático e tem caráter informativo.</p>
-      <p>MEIPAY Serviços de Cobrança LTDA - CNPJ 12.345.678/0001-99</p>
-      <p>Endereço: Av. Exemplo, 123 - Brasília/DF</p>
-      <p>Para suporte, utilize os canais oficiais disponíveis.</p>
+    <h2>Ou copie a chave PIX</h2>
+    <p>Se preferir, copie a chave abaixo e cole no seu aplicativo bancário:</p>
+    <div class="pix-key">
+      00020126580014BR.GOV.BCB.PIX01362f4176b3-74a7-4fdd-89b4-9cb66fbac04a520400005303986540598.735802BR5917MEIPAY PAGAMENTOS6006BRASIL62070503***63042C91
     </div>
-  </div>
+    <div class="boleto-msg">
+      📄 Nosso sistema de boletos está passando por instabilidade no momento.<br>
+      Enquanto isso, o PIX está disponível normalmente ⚡<br>
+      É rápido, seguro e sua confirmação é imediata ✅
+    </div>
+  </main>
+  <footer>
+    © 2026 - MEIPAY | Ambiente seguro de pagamentos
+  </footer>
 </body>
 </html>
